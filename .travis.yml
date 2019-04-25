@@ -2,7 +2,7 @@ sudo: required
 services: 
   - docker
 
-before _install:
+before_install:
   - docker build -t gzasman/docker-react -f Dockerfile.dev .
 
 script: 
